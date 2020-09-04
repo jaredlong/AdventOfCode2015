@@ -17,9 +17,9 @@ for direction in directions:
         x-=1
     path.append(str(x) + '-' + str(y))
 
-removed_dup_list = set(path)
-ans = len(path) - len(removed_dup_list)
-ans = len(path) - ans
+print(len(path))
 
-print('Santa delivered presents to only' + str(ans) + ' houses')
+houses = set(path)
+
+print('Santa delivered presents to only ' + str(len(houses)) + ' houses')
 
